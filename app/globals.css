@@ -9,6 +9,7 @@
   .flex-between {
     @apply flex justify-between items-center;
   }
+  
 }
 @layer base {
   :root {
@@ -76,9 +77,9 @@
 
 @layer base {
   * {
-    @apply border-border;
+    /* @apply border-border; */
   }
   body {
-    @apply bg-background text-foreground;
+    /* @apply bg-background text-foreground; */
   }
 }
