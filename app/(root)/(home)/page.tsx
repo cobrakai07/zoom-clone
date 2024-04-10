@@ -2,8 +2,8 @@ import React from "react";
 
 const page = () => {
   const now = new Date();
-  const time=now.getHours()+":"+now.getMinutes();
-  const date='';
+  const time=now.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+  const date=new Intl.DateTimeFormat('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }).format(now);
   return (
     <section className="flex size-full flex-col gap-10 text-white ">
       <div className="h-[300px] w-full rounded-[20px] bg-hero bg-cover">
